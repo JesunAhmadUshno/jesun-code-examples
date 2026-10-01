@@ -1,0 +1,13 @@
+note FizzBuzz in Jesun.Code: plain-English loops and decisions.
+
+count is 1
+repeat 20 times
+    if count % 15 is 0 then
+        show "FizzBuzz"
+    otherwise if count % 3 is 0 then
+        show "Fizz"
+    otherwise if count % 5 is 0 then
+        show "Buzz"
+    otherwise
+        show count
+    count is count + 1

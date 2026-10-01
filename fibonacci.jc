@@ -1,0 +1,11 @@
+note Fibonacci in Jesun.Code: recursion in plain English.
+
+to fib with n
+    if n is at most 1 then
+        give back n
+    give back (fib with n - 1) + (fib with n - 2)
+
+index is 0
+repeat 11 times
+    show fib with index
+    index is index + 1
