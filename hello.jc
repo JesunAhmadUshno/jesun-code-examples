@@ -1,0 +1,9 @@
+note Hello, world, in Jesun.Code: variables, showing, and interpolation.
+
+name is "Jesun"
+show "Hello, {name}!"
+show "Two plus two is {2 + 2}."
+awake is true
+show awake
+mystery is nothing
+show mystery

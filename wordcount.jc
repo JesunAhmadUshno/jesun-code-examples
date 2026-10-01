@@ -1,0 +1,9 @@
+note Word count in Jesun.Code: reading a file, splitting, counting.
+
+write "Jesun.Code reads like plain English.\nIt runs like a real language.\n" to file "words.txt"
+
+read file "words.txt" giving contents
+words is split of contents by " "
+lines is split of contents by "\n"
+show "words: {length of words}"
+show "lines: {length of lines}"

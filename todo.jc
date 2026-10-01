@@ -1,0 +1,21 @@
+note A tiny todo list in Jesun.Code: lists, functions, and loops.
+
+todos is []
+
+to add_todo with task
+    push task to todos
+    show "added: {task}"
+
+to list_todos
+    if length of todos is 0 then
+        show "nothing to do. lucky you."
+    otherwise
+        n is 1
+        for each task in todos
+            show "{n}. {task}"
+            n is n + 1
+
+add_todo with "ship the grammar repo"
+add_todo with "write more Jesun.Code"
+add_todo with "teach the world plain-English code"
+list_todos

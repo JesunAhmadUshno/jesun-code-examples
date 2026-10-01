@@ -1,0 +1,19 @@
+note Prime numbers in Jesun.Code: nested loops and a helper.
+
+to is_prime with n
+    if n is less than 2 then
+        give back false
+    d is 2
+    repeat while d * d is at most n
+        if n % d is 0 then
+            give back false
+        d is d + 1
+    give back true
+
+found is []
+n is 2
+repeat while length of found is less than 10
+    if is_prime with n then
+        push n to found
+    n is n + 1
+show "first ten primes: {found}"
