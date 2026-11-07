@@ -1,5 +1,8 @@
 # Jesun.Code Examples
 
+Live dashboard: https://jesunahmadushno.github.io/jesun-code-examples/
+(each program beside its recorded output, with a run-it-in-your-browser button)
+
 Real programs written in [Jesun.Code](https://github.com/JesunAhmadUshno/jesun-code),
 a programming language that reads like plain English. Every `.jc` file in
 this repo runs on the real interpreter, and `scripts/check_examples.py` proves
