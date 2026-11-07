@@ -34,7 +34,7 @@ the same on every push, with the interpreter pinned at `1282f9a`.
 | `fizzbuzz.jc` | Loops (`repeat`), decisions (`if` / `otherwise if` / `otherwise`) |
 | `fibonacci.jc` | Functions (`to ... with`), `give back`, recursion |
 | `todo.jc` | Lists, `push`, `for each`, a tiny todo app |
-| `wordcount.jc` | File I/O (`write ... to file`, `read file ... giving`), `split of` |
+| `wordcount.jc` | File I/O (`write ... to file`, `read file ... giving`), `split of`, nested `for each` |
 | `primes.jc` | Nested loops, a prime-checking helper |
 
 ## The language in 30 seconds

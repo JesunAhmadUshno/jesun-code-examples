@@ -1,9 +1,17 @@
 note Word count in Jesun.Code: reading a file, splitting, counting.
+note Split into lines first, then words, and skip the empty pieces a
+note trailing newline or a double space would otherwise count.
 
 write "Jesun.Code reads like plain English.\nIt runs like a real language.\n" to file "words.txt"
 
 read file "words.txt" giving contents
-words is split of contents by " "
-lines is split of contents by "\n"
-show "words: {length of words}"
-show "lines: {length of lines}"
+words is 0
+lines is 0
+for each line in split of contents by "\n"
+    if line is not "" then
+        lines is lines + 1
+        for each word in split of line by " "
+            if word is not "" then
+                words is words + 1
+show "words: {words}"
+show "lines: {lines}"
