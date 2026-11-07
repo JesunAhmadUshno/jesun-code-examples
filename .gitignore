@@ -1,0 +1,9 @@
+# wordcount.jc writes this next to wherever it runs
+words.txt
+
+__pycache__/
+
+# site build
+site/node_modules/
+site/dist/
+site/.rubric/

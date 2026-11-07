@@ -2,15 +2,29 @@
 
 Real programs written in [Jesun.Code](https://github.com/JesunAhmadUshno/jesun-code),
 a programming language that reads like plain English. Every `.jc` file in
-this repo runs on the real interpreter, verified.
+this repo runs on the real interpreter, and `scripts/check_examples.py` proves
+it: it runs each program and diffs the output against `expected/<name>.out`.
 
 ## Run them
 
+The examples are checked against Jesun.Code commit `1282f9a`. Pin it so a later
+language change cannot silently break them:
+
 ```bash
 git clone https://github.com/JesunAhmadUshno/jesun-code.git
-cd jesun-code
-python3 jesun.py /path/to/example.jc
+git -C jesun-code checkout 1282f9a
+python3 jesun-code/jesun.py /path/to/example.jc
 ```
+
+## Verify them
+
+```bash
+JESUN_CODE=jesun-code/jesun.py python3 scripts/check_examples.py
+```
+
+Each program runs in a temporary directory and its output must match
+`expected/<name>.out` byte for byte. CI (`.github/workflows/examples.yml`) does
+the same on every push, with the interpreter pinned at `1282f9a`.
 
 ## The examples
 
@@ -48,4 +62,4 @@ function. That is most of the language.
 
 ## License
 
-MIT. Part of the Jesun.Code project.
+MIT (see `LICENSE`). Part of the Jesun.Code project.
