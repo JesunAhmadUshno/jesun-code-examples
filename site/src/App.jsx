@@ -435,10 +435,10 @@ function Notes() {
   const notes = [
     ['The interpreter lives in another repo', `Outputs are recorded and checked only against jesun-code @${COMMIT}. A later language change could break an example; CI will catch it only when the pin is moved on purpose.`],
     ['wordcount.jc was wrong, and is fixed here', `Splitting the whole text on one space counted ${naiveWords} "words", and splitting on newlines counted ${naiveLines} "lines" (the empty piece after the trailing newline). It now splits lines, then words, and skips empty pieces. Its recording was redone from the interpreter.`],
-    ['The live runner is the real interpreter, within limits', 'It runs the same jesun.py in Pyodide. Features that need threads, subprocesses or a network server (fleets, serve) will not work in a browser tab, and runs stop after 10 seconds.'],
+    ['The live runner is the real interpreter, within limits', 'It runs the same jesun.py in Pyodide. Features that need threads or subprocesses (such as fleets) may not work in a browser tab, and runs stop after 10 seconds.'],
     ['The feature grid is a keyword scan, not a parser', 'It tags lines by regular expressions over the source. It is checked against the README table, but an unusual line could be tagged wrongly.'],
     ['"Reads like plain English" is a claim, not a measurement', 'Nothing here tests whether newcomers read these programs faster than Python. There is no learner study and no side-by-side comparison.'],
-    ['Thin coverage', 'No example covers error handling, maps, user input, Bangla keywords or concurrency, all of which the language has. Its own repo has broader examples.'],
+    ['Thin coverage', 'No example covers error handling, tables, user input, Bangla keywords or fleets, all of which the language has. Its own repo has broader examples.'],
   ];
   return (
     <section id="notes" className="card window reveal" data-title="honest_notes.md">
